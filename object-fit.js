@@ -6,7 +6,7 @@
           type: 'cover'
         }, opts);
 
-    if(!browserUnsupported() && !options.force){
+    if(document.body.style.objectFit != undefined && !options.force){
       return false;
     }
 
@@ -14,15 +14,6 @@
       new objectFit(this, options);
     });
   };
-
-  function browserUnsupported() {
-    var ua = window.navigator.userAgent;
-    var msie = ua.indexOf('MSIE ') > 0;
-    var edge = ua.indexOf('Windows NT') > 0;
-    var safari = ua.indexOf('Safari/537.78.2') > 0;
-
-    return msie || safari || edge || !!navigator.userAgent.match(/Trident.*rv\:11\./);
-  }
 })(window, jQuery);
 
 var objectFit = function(el, options){
