@@ -1,0 +1,33 @@
+{
+  "name": "object-fit",
+  "description": "An Object Fit jQuery Plugin",
+  "homepage": "https://github.com/jtparrett/object-fit",
+  "authors": [
+    "Josh Parrett - @jtparrett"
+  ],
+  "keywords": [
+    "jQuery",
+    "object",
+    "fit"
+  ],
+  "license": "MIT",
+  "main": [
+    "dist/object-fit.js",
+    "dist/object-fit.sass"
+  ],
+  "dependencies": {
+    "jquery": ">=1.7"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "grunt",
+    "Gruntfile.js",
+    "package.json",
+    "README.md",
+    "src"
+  ]
+}
