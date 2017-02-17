@@ -13,7 +13,7 @@
   "license": "MIT",
   "main": [
     "dist/object-fit.js",
-    "dist/object-fit.sass"
+    "dist/object-fit.css"
   ],
   "dependencies": {
     "jquery": ">=1.7"
