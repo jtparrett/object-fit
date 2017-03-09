@@ -16,15 +16,11 @@ $(function(){
   };
 
   function browserUnsupported() {
-    var ua = window.navigator.userAgent;
-    var msie = ua.indexOf('MSIE ') > 0;
-    var safari = ua.indexOf('Safari/537.78.2') > 0;
-
-    if(safari){
-        $('html').addClass('is-safari');
-    }
-
-    return msie || safari || !!navigator.userAgent.match(/Trident.*rv\:11\./);
+    var ua = window.navigator.userAgent.toLowerCase();
+    var msie = ua.indexOf('msie') > 0;
+    var safari = ua.indexOf('safari/537.78.2') > 0;
+    var edge = us.indexOf('edge') > 0;
+    return msie || safari || edge;
   }
 
   $.fn.objectFit = function(){
